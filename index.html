@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <strong> Give it Forward | School Charity </strong> </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Global Styles */
+        :root {
+            --green-dark: #35540A;
+            --green-light: #8EAF33;
+            --yellow-light: #FFEFD5;
+            --yellow-dark: #5E3C25;
+            --cream: #fdf7e3;
+            --brown-light:#240c0c;
+            --brown-dark:#5E3C25;
+        }
+       
+        body {
+            font-family: 'Hind', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cream);
+            color: #333;
+        }
+        
+        /* Header & Navigation */
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 1rem;
+        }
+        
+        nav a {
+            margin: 0 1.5rem;
+            text-decoration: none;
+            color: var(--green-dark);
+            font-weight: bold;
+            padding: 0.5rem 0;
+            position: relative;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: var(--green-light);
+        }
+        
+        nav a.active {
+            color: var(--green-light);
+        }
+        
+        nav a.active::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background-color: var(--green-light);
+        }
+        
+        /* Sections */
+        section {
+            padding: 4rem 2rem;
+            text-align: center;
+            min-height: 60vh;
+        }
+        
+        h1 {
+            color: var(--green-dark);
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        h2 {
+            color: var(--green-light);
+        }
+        
+        .hero {
+            background-color: var(--yellow-light);
+            border-radius: 0 0 20px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .slogan {
+            font-size: 1.5rem;
+            color: var(--brown-dark);
+            margin-bottom: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .description {
+            max-width: 600px;
+            margin: 1.5rem auto;
+            line-height: 1.6;
+        }
+        
+        .donate-btn {
+            background-color: var(--green-dark);
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin: 1.5rem 0;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .donate-btn:hover {
+            background-color: var(--green-light);
+        }
+        
+        .qr-container {
+            margin-top: 2rem;
+            padding: 1rem;
+            background: white;
+            border-radius: 10px;
+            display: inline-block;
+        }
+        
+        .qr-container p {
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+        
+        /* Donation Tracker */
+        .tracker {
+            font-size: 3rem;
+            font-weight: bold;
+            color: var(--green-dark);
+            margin: 2rem 0;
+        }
+        
+        /* Social Buttons */
+        .social-icons {
+            margin-top: 2rem;
+        }
+        
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            color: var(--green-dark);
+            transition: transform 0.3s;
+        }
+        
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--green-dark);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav>
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#help">How to Help</a>
+            <a href="#donations">Donations</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <h1>Give It Forward</h1>
+        <p class="slogan">Don't need it? Give it forward!</p>
+        <img src="logo.png.jpg" alt="Give it Forward Logo" width="250">
+        
+        <p class="description">
+            Clothing waste is mass produced at an overwhelming rate, more than we need or use. Closets are being filled to the brim with clothes just to be thrown out after they just sit there. At the same time millions of people around the globe are unable to afford even basic clothing.</p>
+
+         <p class="description">
+             <strong>Give It Forward </strong> is a charity made to reduce the global issue of waste by collecting the clothes in your closet that are just collecting dust, and giving it to people in need.</p>
+
+         <p class="description">
+            ⬇️ Support us by donating your unwanted clothes or items. ⬇️ </p>
+        
+        
+        
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLScLeHEulQBAK8oX6uGgQEISukCVG8uRvlvoh6-fcLrl2SU3gA/viewform?usp=header" class="donate-btn" target="_blank">Donate Now</a>
+
+    </section>
+
+    <!-- About Us -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a team of students from Denise: <strong>Aden Darie, Dilek Nur Kaya, Kseniia Kovalova & Milo Los</strong>, working alongside the <strong>Green Team</strong> to promote sustainability.</p>
+        <p>Our charity seeks to reduce clothing waste by organizing a <strong>Clothes Swap</strong> at school. Unclaimed items are donated to those in need.</p>
+        <p><strong> How did we came out to this idea?</strong> —  At first, we had no idea what to do for our English project. There were so many options, but we had to keep it achievable for us — students. After some discussion, we realized we wanted to create something meaningful because this is our future, and if we do not try to change things, then, who will? </p>
+ 
+        <p>After we have done some research, we were shocked by the numbers: tons of clothing and textiles are thrown away every year, and a lot of it ends up polluting our oceans. It was not only about the environment. We also started thinking about all the people who actually need this clothing. One of our team members shared a memory from their previous school, where students organized a donation drive. It gave as an idea of creating «Give it Forward» —That is how our project was born, the project that includes environmental care and social kindness. 
+</p> 
+<p> We are donating everything in <strong> "Name of a charity"</strong></p>
+    </section>
+
+    <!-- How to Help -->
+    <section id="help">
+        <h2>How You Can Help</h2>
+        <p>1. You can bring clothes you no longer wear to our swap event.</p>
+        <p>2. Then exchange them for something "new-to-you."</p>
+        <p>3. After the <strong>"Clothe Swap"</strong> we will donate unclaimed items to people in need.</p>
+        <div class="qr-container">
+            <p>Scan to donate</p>
+            <img src="Qr-code.goodq.png" alt="QR Code for Donation Form" width="150">
+        </div>
+        <p> We are donating everything in <strong> "Name of a charity"</strong></p>
+    </section>
+
+    <!-- Donation Tracker -->
+    <section id="donations">
+        <h2>Our Impact</h2>
+        <div class="tracker">0 pieces</div>
+        <p><strong>You can be the first to contribute to our cause!</strong></p>
+        <p>*This number will be updated each time this event is executed</p>
+    </section>
+
+<!-- Contact -->
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Email</strong>: s94832@denise.espritscholen.nl ~ Kseniia Kovalova</p>
+    <p><strong>De Nieuwe Internationale School Esprit (DENISE)</strong>📍 Piet Mondriaanstraat 140, 1061 TT Amsterdam</p>
+    
+    <div class="social-icons">
+        <a href="https://www.instagram.com/give_it_forward/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/31623096761" target="_blank"><i class="fab fa-whatsapp"></i></a> <!-- Замените 31612345678 на ваш номер -->
+        <a href="mailto:s94832@denise.espritscholen.nl"><i class="far fa-envelope"></i></a>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Give it Forward | School Charity Project</p>
+    </footer>
+
+    <!-- JavaScript for Active Tab -->
+    <script>
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.querySelectorAll('nav a').forEach(a => a.classList.remove('active'));
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
